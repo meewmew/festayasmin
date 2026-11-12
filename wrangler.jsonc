@@ -1,0 +1,20 @@
+{
+  "name": "yasminfesta2000s",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-11-12",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "none"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "yasminfesta2000s",
+      "database_id": "e8d50fbb-0bbb-4140-b172-6269987fb26c",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}

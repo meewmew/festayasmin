@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+<defs>
+<linearGradient id="silver" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".25" stop-color="#b7a8c1"/><stop offset=".48" stop-color="#fff"/><stop offset=".52" stop-color="#83728f"/><stop offset="1" stop-color="#f9eafd"/></linearGradient>
+<radialGradient id="diamond"><stop stop-color="#fff"/><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#b8a4c7"/></radialGradient>
+<path id="spark" d="m0-9 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z" fill="#fff"/>
+</defs>
+<g stroke="url(#silver)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M34 161C29 139 7 123 13 101 18 84 37 80 56 83 66 61 87 62 104 76 112 56 128 55 140 64 151 55 169 56 177 76 196 62 216 62 225 83 245 78 263 85 268 101 274 123 250 141 247 161" fill="#34142c" fill-opacity=".34"/>
+<path d="M44 160C52 143 29 124 31 107 34 87 55 88 73 95 94 103 109 101 121 88M236 160C227 141 251 125 249 107 246 87 225 88 207 95 186 103 171 101 159 88"/>
+<path d="M74 157C102 132 49 100 76 79 93 65 112 83 122 96M206 157C178 132 232 100 205 79 188 65 169 83 158 96"/>
+<path d="M115 158C122 139 109 120 116 101 121 85 134 79 140 65 145 79 159 85 164 101 171 120 158 139 165 158M140 68v95"/>
+<path d="M44 159Q140 142 237 159L244 184Q140 169 36 184Z" fill="url(#silver)"/>
+<path d="M40 169Q140 153 240 169M38 180Q140 164 242 180" stroke="#fff" stroke-width="2"/>
+<path d="m140 29 11 15-11 18-11-18Z" fill="url(#diamond)"/>
+</g>
+<g stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-dasharray=".2 9">
+<path d="M39 153C20 127 1 104 27 90M241 153C260 127 279 104 253 90M77 148C98 129 49 100 78 78M203 148C182 129 232 100 202 78M127 151C135 128 114 115 127 96M153 151C145 128 166 115 153 96M53 113Q140 139 228 113"/>
+</g>
+<g fill="url(#diamond)" stroke="#fff" stroke-width="1">
+<circle cx="30" cy="93" r="5"/><circle cx="59" cy="83" r="6"/><circle cx="83" cy="70" r="6"/><circle cx="106" cy="78" r="5"/><circle cx="121" cy="62" r="5"/><circle cx="159" cy="62" r="5"/><circle cx="175" cy="78" r="5"/><circle cx="199" cy="70" r="6"/><circle cx="223" cy="83" r="6"/><circle cx="252" cy="93" r="5"/>
+<path d="m140 100 9 15-9 19-9-19Z"/>
+<circle cx="61" cy="169" r="4"/><circle cx="85" cy="166" r="4"/><circle cx="110" cy="164" r="4"/><circle cx="140" cy="163" r="5"/><circle cx="170" cy="164" r="4"/><circle cx="195" cy="166" r="4"/><circle cx="219" cy="169" r="4"/>
+</g>
+<path d="M140 5v20m-8-12h16" stroke="white" stroke-width="5" stroke-linecap="round"/>
+<use href="#spark" x="58" y="82"/><use href="#spark" x="223" y="83"/><use href="#spark" x="140" y="113"/><use href="#spark" x="82" y="167"/><use href="#spark" x="199" y="167"/>
+</svg>

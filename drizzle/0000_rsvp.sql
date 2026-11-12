@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS rsvps (
+ id TEXT PRIMARY KEY NOT NULL,
+ names_json TEXT NOT NULL,
+ created_at TEXT NOT NULL
+);

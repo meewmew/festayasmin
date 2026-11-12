@@ -1,0 +1,11 @@
+outputs/
+.dev.vars
+.env*
+!.env.example
+.preview-data.json
+.preview.sqlite*
+node_modules/
+
+.wrangler/
+dist/
+.dev.vars.*
