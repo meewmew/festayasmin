@@ -230,8 +230,7 @@ svg { display: block; width: 1.3em; height: 1.3em; fill: currentColor; flex-shri
 .success-sparkles span:nth-child(6) { left: 2%; top: 58%; font-size: 14px; }
 .is-celebrating .success-sparkles span { animation: celebrate 1.5s ease-out both; }
 .is-celebrating .success-sparkles span:nth-child(even) { animation-delay: .1s; }
-.decline-icon { color: #b64b8d; font: 46px/1 Georgia, serif; background: #f8d9ec; }
-.decline-state .retro-button { margin-top: 21px; width: 100%; font-size: 11px; }
+.decline-state.dialog-content { padding: 0; max-height: none; overflow: visible; }
 .invitation-footer { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 22px 30px 18px; color: #9d4f7e; background-color: var(--paper); background-image: radial-gradient(#df85ba 0.6px, transparent .7px); background-size: 5px 5px; }
 .footer-signature { font: 29px/1.2 "Brush Script MT", "Segoe Script", cursive; color: #b3186e; transform: rotate(-6deg); white-space: nowrap; }
 .footer-message { display: flex; align-items: center; gap: 6px; font-size: 9px; text-align: right; }
@@ -520,7 +519,7 @@ body.motion-paused .pixel-sparkle-static { display: block; }
 }
 .hero-cta { font-size: 17px; min-height: 48px; padding: 11px 36px; }
 .retro-button { min-height: 46px; font-size: 15px; padding: 11px 22px; }
-.rsvp-choices .secondary-button, .dialog-actions .retro-button, .submit-button, .decline-state .retro-button { font-size: 14px; min-height: 46px; }
+.rsvp-choices .secondary-button, .dialog-actions .retro-button, .submit-button { font-size: 14px; min-height: 46px; }
 .primary-button::after { display: none; }
 .yes-button svg { color: #fff0f8; }
 .add-attendee { font-size: 13px; }
@@ -646,7 +645,7 @@ body.motion-paused .pixel-sparkle-static { display: block; }
       <a class="toolbar-return" href="https://meewmew.github.io/festayasmin/" aria-label="Voltar ao convite" title="Voltar ao convite"><span class="toolbar-back" aria-hidden="true"></span></a>
       <span class="toolbar-forward" aria-hidden="true"></span>
       <span class="address-label" aria-hidden="true">Endereço</span>
-      <div class="address-field" aria-hidden="true"><span class="address-mark"></span><span class="address-url">https://meewmew.github.io/festayasmin/confirmar/</span><span class="address-arrow">▾</span></div>
+      <div class="address-field" aria-hidden="true"><span class="address-mark"></span><span class="address-url">www.meusfavoritos.com/yasmin</span><span class="address-arrow">▾</span></div>
       <span class="toolbar-go" aria-hidden="true">Ir <span>➜</span></span>
     </nav>
 
@@ -722,11 +721,11 @@ body.motion-paused .pixel-sparkle-static { display: block; }
               <div class="success-ticket"><span>★</span> Vejo você na festa <span>★</span></div>
             </div>
 
-            <div class="response-state decline-state" id="decline-state" tabindex="-1" hidden>
-              <div class="response-icon decline-icon" aria-hidden="true">♡</div>
-              <h3>Você vai fazer falta!</h3>
-              <p>Tudo bem, obrigada por avisar. Se os planos mudarem, ainda dá para vir. ♡</p>
-              <button class="retro-button secondary-button" id="change-mind-button" type="button">Mudei de ideia, eu vou!</button>
+            <div class="response-state decline-state dialog-content" id="decline-state" tabindex="-1" hidden>
+              <svg class="dialog-heart" aria-hidden="true"><use href="#icon-heart"/></svg>
+              <h2>Você vai fazer falta!</h2>
+              <p>Tudo bem, obrigada por avisar.<br>Se os planos mudarem, ainda dá para vir.</p>
+              <div class="dialog-actions"><button class="retro-button secondary-button" id="change-mind-button" type="button">Mudei de ideia, eu vou!</button></div>
             </div>
           </div>
         </section>
